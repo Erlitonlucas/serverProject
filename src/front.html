@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form method="GET">
+        <label for="name">Informe os valores </label><br>
+        <input type="number" id="first" > + 
+        <input type="number" id="second"><br>
+    </form>
+    <input type="submit" onclick="calcular()">
+    <script>
+        function calcular() {
+            var first = document.getElementById("first");
+            var second = document.getElementById("second");
+            return first + second;
+        }
+    </script>
+</body>
+</html>
